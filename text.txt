@@ -1,0 +1,30 @@
+Create a Lambda function:
+Runtime: Python 3.8
+Handler: lambda_function.lambda_handler
+Role: Use the IAM role created in step 3
+Copy the contents of lambda_function.py into your Lambda function code.
+Configure the S3 trigger for your Lambda function:
+Select the source bucket (1234-image)
+Event type: All object create events
+Deploy your Lambda function.
+Testing
+To test the function:
+Upload an image to the source S3 bucket (1234-image).
+Check the destination S3 bucket (1234-thumnailimage) for the generated thumbnail.
+Verify the Lambda function logs in CloudWatch.
+Troubleshooting
+If you encounter issues:
+Check the Lambda function's execution role permissions.
+Verify that both S3 buckets exist and are in the correct region.
+Review CloudWatch logs for detailed error messages.
+Contributing
+Feel free to submit pull requests or create issues for any bugs or improvements.
+
+
+License:-
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+This README provides a comprehensive guide for setting up the project, including the necessary AWS resources and permissions. It also includes sections on testing and troubleshooting, which will be helpful for anyone working with or contributing to your project.
+
+Remember to add this README.md file to your local repository, commit it, and then push it to your GitHub repository along with your Lambda function code.
