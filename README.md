@@ -1,5 +1,3 @@
-Certainly! I'll create a README.md file for your GitHub repository that includes the steps to set up the Lambda function, configure S3 permissions, and deploy the project. Here's the content for your README.md:
-
 ```markdown
 # S3 Thumbnail Generator Lambda Function
 
